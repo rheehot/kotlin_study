@@ -267,14 +267,69 @@ import main.util.somethingPrint as anotherNameFunction
 //    }
 //}
 
-
-fun main(args:Array<String>){
-//    val c = Class1And2()
-//    c.functionA()
-
-    anotherNameFunction("hello")
-    someJavaClass.printSomeThing("hello java")
-
-}
+//
+//fun main(args:Array<String>){
+////    val c = Class1And2()
+////    c.functionA()
+//
+//    anotherNameFunction("hello")
+//    someJavaClass.printSomeThing("hello java")
+//
+//}
 
 //Fun A from Interface 2
+
+//data class Person (val name : String, val age: Int)
+//
+//fun main(args: Array<String>){
+//    val person1 = Person("Alice", 21)
+//    val person2 = Person("Alice", 21)
+//
+//    println(person1)
+//    println(person1 == person2)
+//}
+
+//Person(name=Alice, age=21)
+//true
+
+//data class Person (val name : String, val age: Int)
+//
+//fun main(args: Array<String>){
+//
+//    val (country, city) = Pair("Spain","Madrid")
+//
+//    val (country1, city1, continent1) = Triple("Spain","Madrid","Europe")
+//
+//    val(_,age) = Person("Joe Smith", 42)
+//
+//    val person = Person("Joe Smith", 42)
+//
+//}
+
+// inner
+// Nested
+
+//class Outer {
+//    private val bar: Int = 1
+//
+//    class Nested{
+//        fun foo() = 2
+//    }
+//}
+//
+//class OuterWithInner {
+//    private val bar: Int = 1
+//
+//    inner class Inner {
+//        fun foo() = 2
+//    }
+//}
+//
+//fun main (args:Array<String>){
+//    val outer = Outer.Nested().foo() // ==2
+//    println(outer)
+//
+//    val outerWithInner = OuterWithInner().Inner().foo()
+//    println(outerWithInner)
+//}
+

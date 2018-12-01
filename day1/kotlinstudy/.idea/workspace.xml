@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47ed434c-8ddd-4874-8215-c92830a0698e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/util/SomeFunction.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/util/someJavaClass.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../springboot_initializr/gradle-multi-modules/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../springboot_initializr/gradle-multi-modules/build.gradle" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../springboot_initializr/gradle-multi-modules/gradle-multi-modules.iml" afterDir="false" />
@@ -216,9 +213,7 @@
       <change afterPath="$PROJECT_DIR$/../../../springboot_initializr/webix/src/main/resources/static/08_chart/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../webix/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kotlinstudy/ApplicationKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kotlinstudy/META-INF/kotlinstudy.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kotlinstudy/META-INF/kotlinstudy.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Application.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -239,8 +234,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Application.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="275" selection-start-line="275" selection-end-line="275" />
+            <state relative-caret-position="293">
+              <caret line="335" lean-forward="true" selection-start-line="335" selection-end-line="335" />
               <folding>
                 <element signature="e#14#99#0" expanded="true" />
               </folding>
@@ -305,11 +300,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2" />
-    <option name="y" value="7" />
-    <option name="width" value="851" />
-    <option name="height" value="977" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-11" />
+    <option name="width" value="846" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -353,7 +347,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543656373233" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543666197759" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -416,7 +410,7 @@
       <workItem from="1543289973819" duration="570000" />
       <workItem from="1543293115043" duration="4697000" />
       <workItem from="1543629931212" duration="83000" />
-      <workItem from="1543630948415" duration="7479000" />
+      <workItem from="1543630948415" duration="11004000" />
     </task>
     <task id="LOCAL-00001" summary="kotlin study #3-2">
       <created>1543654150896</created>
@@ -432,17 +426,24 @@
       <option name="project" value="LOCAL" />
       <updated>1543655731921</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="kotlin study #3-4">
+      <created>1543656402973</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543656402973</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25406000" />
+    <option name="totallyTimeSpent" value="28931000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="5" width="567" height="651" extended-state="0" />
+    <frame x="-7" y="0" width="564" height="687" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.33667085" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.81854045" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -452,7 +453,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.9821747" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.5" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.31588447" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -464,7 +465,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.3268206" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.3267148" />
       <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -484,7 +485,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="kotlin study #3-2" />
     <MESSAGE value="kotlin study #3-3" />
-    <option name="LAST_COMMIT_MESSAGE" value="kotlin study #3-3" />
+    <MESSAGE value="kotlin study #3-4" />
+    <option name="LAST_COMMIT_MESSAGE" value="kotlin study #3-4" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kotlinstudy.iml">
@@ -518,10 +520,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/util/Tuples.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Application.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="275" selection-start-line="275" selection-end-line="275" />
+        <state relative-caret-position="293">
+          <caret line="335" lean-forward="true" selection-start-line="335" selection-end-line="335" />
           <folding>
             <element signature="e#14#99#0" expanded="true" />
           </folding>
