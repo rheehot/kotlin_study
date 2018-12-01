@@ -1,11 +1,11 @@
-import com.sun.org.apache.xpath.internal.operations.Bool
+package main
 
 /**
  * Created by rheehot@gmail.com on 2018-11-24
  * Blog : http://jowlee.blog.me
  * Github : http://github.com/rheehot
  */
-//fun main(args:Array<String>){
+//fun main.main(args:Array<String>){
 ////    println("Hello World!")
 //    val reMax = max(1,2 )
 //    println(reMax)
@@ -22,7 +22,7 @@ import com.sun.org.apache.xpath.internal.operations.Bool
 //    doSomething(*elements)
 //}
 
-//fun main(args: Array<String>){
+//fun main.main(args: Array<String>){
 //    printMany(1, 2, 3, 4)
 //}
 
@@ -36,7 +36,7 @@ import com.sun.org.apache.xpath.internal.operations.Bool
 // local function
 
 //fun String.lastChar() = this.get(this.length - 1)
-//fun main(args: Array<String>){
+//fun main.main(args: Array<String>){
 //    println("abc".lastChar())
 //
 //}
@@ -52,7 +52,7 @@ import com.sun.org.apache.xpath.internal.operations.Bool
 //}
 //
 //
-//fun main(args: Array<String>){
+//fun main.main(args: Array<String>){
 //    foo("fooParam")
 //
 //}
@@ -65,13 +65,13 @@ import com.sun.org.apache.xpath.internal.operations.Bool
 //}
 //fun lowerCase(value:String) = value.toLowerCase()
 //
-//fun main(args: Array<String>){
+//fun main.main(args: Array<String>){
 //    println(higherOrder("Hello", ::lowerCase))
 //
 //}
 //
 
-//fun main(args:Array<String>){
+//fun main.main(args:Array<String>){
 //    val string = "one, two, three"
 //
 //    println(string.filter({ c : Char -> c in 'a'..'z' }))
@@ -95,7 +95,7 @@ import com.sun.org.apache.xpath.internal.operations.Bool
 //    }
 //}
 //
-//fun main(args: Array<String>){
+//fun main.main(args: Array<String>){
 //    outsideFunction()
 //}
 
@@ -114,12 +114,12 @@ import com.sun.org.apache.xpath.internal.operations.Bool
 //    }
 //}
 //
-//fun main(args: Array<String>){
+//fun main.main(args: Array<String>){
 //    printMany(1,2,3,4)
 //}
 //
 //
-//fun main(args:Array<String>){
+//fun main.main(args:Array<String>){
 //    var string = "one, two, three"
 //
 //    string.filter { c:Char -> c in 'a'..'z' }
@@ -128,7 +128,7 @@ import com.sun.org.apache.xpath.internal.operations.Bool
 
 /// #### Study 2 Day ############
 
-//class Person constructor(firstName: String) {
+//class main.Person constructor(firstName: String) {
 //}
 //
 //class Person1  (firstName: String) {
@@ -150,7 +150,7 @@ import com.sun.org.apache.xpath.internal.operations.Bool
 //    return result
 //}
 //
-//class Person constructor(val name:String, val age: Int) {
+//class main.Person constructor(val name:String, val age: Int) {
 //    constructor(name : String) : this(name, 99)
 //
 //    fun hello(){
@@ -158,8 +158,8 @@ import com.sun.org.apache.xpath.internal.operations.Bool
 //    }
 //}
 //
-//fun main(args: Array<String>){
-//    val person = Person("Alice", 26)
+//fun main.main(args: Array<String>){
+//    val person = main.Person("Alice", 26)
 //    println(person.name)
 //    person.hello()
 //}
@@ -173,22 +173,100 @@ import com.sun.org.apache.xpath.internal.operations.Bool
 //        }
 //}
 //
-//fun main(args: Array<String>){
+//fun main.main(args: Array<String>){
 //    val rectangle = Rectangle(41, 43)
 //    println(rectangle.isSquare)
 //}
 
-fun main(args:Array<String>){
-    val set1 = setOf(1,2,3)
-    val set2 = setOf(1,2,3)
-
-    println(set1.toString())
-    println(set2.toString())
-
-    println(set1 === set2)
-    println(set1 == set2)
-}
+//fun main.main(args:Array<String>){
+//    val set1 = setOf(1,2,3)
+//    val set2 = setOf(1,2,3)
+//
+//    println(set1.toString())
+//    println(set2.toString())
+//
+//    println(set1 === set2)
+//    println(set1 == set2)
+//}
 //[1, 2, 3]
 //[1, 2, 3]
 //false
 //true
+
+open class Person{
+    open fun validate(){
+        println("main.Person validate!")
+    }
+}
+// override
+//open class Customer : main.Person(){
+//    final override fun validate(){
+//        println("customer validate!")
+//    }
+//}
+//
+//class SpecialCustomer : Customer(){
+//
+//}
+//
+//fun main.main(args:Array<String>){
+//    val person = main.Person()
+//    person.validate()
+//
+//    val customer = Customer()
+//    customer.validate()
+//}
+
+//main.Person validate!
+//customer validate!
+//
+//abstract class StoredEntity {
+//
+//    val isActive = true
+//    abstract fun store()
+//    fun status(): String {
+//        return "status " + isActive.toString()
+//    }
+//}
+// class Employee : StoredEntity(){
+//        override fun store(){
+////            throw UnsupportedOperationException("not implemented")
+//            TODO("not implemented")
+//        }
+// }
+//
+//fun main.main(args: Array<String>){
+//    val se = Employee()
+//    println(se.isActive)
+//    println(se.status())
+//    se.store()
+//}
+
+//true
+//status true
+
+//
+interface Interface1 {
+    fun functionA(){
+        println("Fun A from Interface 1")
+    }
+}
+
+interface Interface2 {
+    fun functionA(){
+        println("Fun A from Interface 2")
+    }
+}
+
+class Class1And2 : Interface1, Interface2 {
+    override fun functionA(){
+        super<Interface2>.functionA()
+    }
+}
+
+fun main(args:Array<String>){
+    val c = Class1And2()
+    c.functionA()
+}
+
+//Fun A from Interface 2
