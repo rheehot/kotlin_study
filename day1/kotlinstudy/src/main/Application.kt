@@ -308,7 +308,7 @@ import main.util.somethingPrint as anotherNameFunction
 
 // inner
 // Nested
-
+//
 //class Outer {
 //    private val bar: Int = 1
 //
@@ -329,7 +329,32 @@ import main.util.somethingPrint as anotherNameFunction
 //    val outer = Outer.Nested().foo() // ==2
 //    println(outer)
 //
-//    val outerWithInner = OuterWithInner().Inner().foo()
+//    val outerWithInner = OuterWithInner().Inner().foo() // ==1
 //    println(outerWithInner)
 //}
+
+
+class Stack<E>(private vararg val items: E){
+    private val elements = items.reversed().toMutableList()
+
+    fun push(element: E){
+        elements.add(0, element)
+    }
+
+    fun pop() : E? {
+        if(!isEmpty())
+            return elements.removeAt(0)
+        return null
+    }
+
+    private fun isEmpty() : Boolean {
+        return elements.isEmpty()
+    }
+}
+
+fun main (args: Array<String>){
+    val stack = Stack(1,2,3,4)
+
+    println(stack.pop())
+}
 
