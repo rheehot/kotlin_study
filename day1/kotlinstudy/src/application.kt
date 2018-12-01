@@ -78,21 +78,40 @@
 //    println(string.filter{ c-> c in 'a'..'z'})
 //    println(string.filter { it in 'a'..'z' })
 //}
+//
+//fun unaryOperation (x: Int, op:(Int) -> Int): Int {
+//    return op(x)
+//}
+//
+//fun outsideFunction(){
+//    for (number in 1..30){
+//        println(unaryOperation(20,{
+//            x -> println(number)
+//            x * number
+//        }))
+//    }
+//}
+//
+//fun main(args: Array<String>){
+//    outsideFunction()
+//}
 
-fun unaryOperation (x: Int, op:(Int) -> Int): Int {
-    return op(x)
+
+fun printMany (vararg elements : Int) {
+    for(element in elements){
+        println(message = element)
+    }
+    println(elements.javaClass.name)
+    doSomething(*elements)
 }
 
-fun outsideFunction(){
-    for (number in 1..30){
-        println(unaryOperation(20,{
-            x -> println(number)
-            x * number
-        }))
+fun doSomething(vararg elements: Int){
+    for (element in elements){
+        println(message = element)
     }
 }
 
 fun main(args: Array<String>){
-    outsideFunction()
+    printMany(1,2,3,4)
 }
 
