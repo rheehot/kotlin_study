@@ -1,5 +1,8 @@
 package main
 
+import main.util.someJavaClass
+import main.util.somethingPrint as anotherNameFunction
+
 /**
  * Created by rheehot@gmail.com on 2018-11-24
  * Blog : http://jowlee.blog.me
@@ -193,11 +196,11 @@ package main
 //false
 //true
 
-open class Person{
-    open fun validate(){
-        println("main.Person validate!")
-    }
-}
+//open class Person{
+//    open fun validate(){
+//        println("main.Person validate!")
+//    }
+//}
 // override
 //open class Customer : main.Person(){
 //    final override fun validate(){
@@ -246,27 +249,32 @@ open class Person{
 //status true
 
 //
-interface Interface1 {
-    fun functionA(){
-        println("Fun A from Interface 1")
-    }
-}
+//interface Interface1 {
+//    fun functionA(){
+//        println("Fun A from Interface 1")
+//    }
+//}
+//
+//interface Interface2 {
+//    fun functionA(){
+//        println("Fun A from Interface 2")
+//    }
+//}
+//
+//class Class1And2 : Interface1, Interface2 {
+//    override fun functionA(){
+//        super<Interface2>.functionA()
+//    }
+//}
 
-interface Interface2 {
-    fun functionA(){
-        println("Fun A from Interface 2")
-    }
-}
-
-class Class1And2 : Interface1, Interface2 {
-    override fun functionA(){
-        super<Interface2>.functionA()
-    }
-}
 
 fun main(args:Array<String>){
-    val c = Class1And2()
-    c.functionA()
+//    val c = Class1And2()
+//    c.functionA()
+
+    anotherNameFunction("hello")
+    someJavaClass.printSomeThing("hello java")
+
 }
 
 //Fun A from Interface 2
