@@ -336,6 +336,7 @@ import main.util.somethingPrint as anotherNameFunction
 
 class Stack<E>(private vararg val items: E){
     private val elements = items.reversed().toMutableList()
+//    private val elements = items.reversed().toList()
 
     fun push(element: E){
         elements.add(0, element)
@@ -352,9 +353,27 @@ class Stack<E>(private vararg val items: E){
     }
 }
 
-fun main (args: Array<String>){
-    val stack = Stack(1,2,3,4)
-
-    println(stack.pop())
+fun <T> stackOf(vararg elements: T) : Stack<T>{
+    return Stack(*elements)
 }
 
+fun main (args: Array<String>){
+    val stack = Stack(1,2,3,4)
+    stack.push(3)
+    println(stack.pop())
+    println(stack.pop())
+    println(stack.pop())
+    println(stack.pop())
+    println(stack.pop())
+
+    val stack2 = stackOf("가","나","다","라")
+
+    println(stack2.pop())
+}
+
+//3
+//4
+//3
+//2
+//1
+//�씪
