@@ -1,6 +1,8 @@
 package main
 
 import main.util.someJavaClass
+import kotlin.properties.Delegates
+import kotlin.reflect.KProperty
 import main.util.somethingPrint as anotherNameFunction
 
 /**
@@ -333,43 +335,43 @@ import main.util.somethingPrint as anotherNameFunction
 //    println(outerWithInner)
 //}
 
-
-class Stack<E>(private vararg val items: E){
-    private val elements = items.reversed().toMutableList()
-//    private val elements = items.reversed().toList()
-
-    fun push(element: E){
-        elements.add(0, element)
-    }
-
-    fun pop() : E? {
-        if(!isEmpty())
-            return elements.removeAt(0)
-        return null
-    }
-
-    private fun isEmpty() : Boolean {
-        return elements.isEmpty()
-    }
-}
-
-fun <T> stackOf(vararg elements: T) : Stack<T>{
-    return Stack(*elements)
-}
-
-fun main (args: Array<String>){
-    val stack = Stack(1,2,3,4)
-    stack.push(3)
-    println(stack.pop())
-    println(stack.pop())
-    println(stack.pop())
-    println(stack.pop())
-    println(stack.pop())
-
-    val stack2 = stackOf("가","나","다","라")
-
-    println(stack2.pop())
-}
+//
+//class Stack<E>(private vararg val items: E){
+//    private val elements = items.reversed().toMutableList()
+////    private val elements = items.reversed().toList()
+//
+//    fun push(element: E){
+//        elements.add(0, element)
+//    }
+//
+//    fun pop() : E? {
+//        if(!isEmpty())
+//            return elements.removeAt(0)
+//        return null
+//    }
+//
+//    private fun isEmpty() : Boolean {
+//        return elements.isEmpty()
+//    }
+//}
+//
+//fun <T> stackOf(vararg elements: T) : Stack<T>{
+//    return Stack(*elements)
+//}
+//
+//fun main (args: Array<String>){
+//    val stack = Stack(1,2,3,4)
+//    stack.push(3)
+//    println(stack.pop())
+//    println(stack.pop())
+//    println(stack.pop())
+//    println(stack.pop())
+//    println(stack.pop())
+//
+//    val stack2 = stackOf("가","나","다","라")
+//
+//    println(stack2.pop())
+//}
 
 //3
 //4
@@ -377,3 +379,51 @@ fun main (args: Array<String>){
 //2
 //1
 //�씪
+//
+//interface ReadOnlyRepo<out T>{
+//    fun getId(id:Int)
+//    fun getAll()
+//}
+//
+//class Example(){
+//    var p: String by Delegate()
+//}
+//
+//class Delegate{
+//    operator fun getValue(thisRef:Any?, property: KProperty<*>)
+//        : String {
+//        return "$thisRef 에 할당된 Example 객체는 '${property.name}'" +
+//                "Delete 클래스에 위임했습니다."
+//    }
+//
+//    operator fun setValue(thisRef: Any?, property: KProperty<*> , value:String)
+//    {
+//        println("Example 클래스가 생성되어 ${thisRef} 할당되고," +
+//        "$value 타입의 객체가 멤버변수 '${property.name}'에" +
+//        " 할당되었습니다")
+//    }
+//}
+//
+//fun main(args:Array<String>){
+//    val example = Example()
+//    example.p = "String"
+//    println(example.p)
+//}
+
+class Person (val name:String, age:Int, salary : Int){
+    private val observer = {
+        prop:KProperty<*>, oldValue: Int, newValue:Int ->
+        println("Property value $oldValue has changed to $newValue")
+    }
+    var age: Int by Delegates.observable(age, observer)
+    var salary : Int by Delegates.observable(salary, observer)
+}
+
+fun main(args:Array<String>){
+    val person = Person("Alice", 25, 30000)
+    person.age++
+    person.salary+=100
+
+//    println(person.age)
+//    println(person.salary)
+}
