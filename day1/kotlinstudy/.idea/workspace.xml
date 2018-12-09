@@ -213,7 +213,6 @@
       <change afterPath="$PROJECT_DIR$/../../../springboot_initializr/webix/src/main/resources/static/08_chart/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../webix/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Application.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -229,13 +228,27 @@
       </map>
     </option>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Application.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="335" lean-forward="true" selection-start-line="335" selection-end-line="335" />
+            <state relative-caret-position="356">
+              <caret line="427" column="28" lean-forward="true" selection-start-line="427" selection-start-column="28" selection-end-line="427" selection-end-column="28" />
               <folding>
                 <element signature="e#14#99#0" expanded="true" />
               </folding>
@@ -302,57 +315,26 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-11" />
-    <option name="width" value="846" />
-    <option name="height" value="1031" />
+    <option name="y" value="12" />
+    <option name="width" value="810" />
+    <option name="height" value="1019" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="kotlinstudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kotlinstudy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kotlinstudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kotlinstudy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kotlinstudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kotlinstudy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kotlinstudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kotlinstudy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543666197759" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543732771053" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -410,7 +392,8 @@
       <workItem from="1543289973819" duration="570000" />
       <workItem from="1543293115043" duration="4697000" />
       <workItem from="1543629931212" duration="83000" />
-      <workItem from="1543630948415" duration="11004000" />
+      <workItem from="1543630948415" duration="12893000" />
+      <workItem from="1543713093931" duration="4244000" />
     </task>
     <task id="LOCAL-00001" summary="kotlin study #3-2">
       <created>1543654150896</created>
@@ -433,17 +416,45 @@
       <option name="project" value="LOCAL" />
       <updated>1543656402973</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="kotlin study #3-5">
+      <created>1543666224459</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543666224459</updated>
+    </task>
+    <task id="LOCAL-00005" summary="kotlin study #3-6">
+      <created>1543668543782</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1543668543782</updated>
+    </task>
+    <task id="LOCAL-00006" summary="kotlin study #3-6">
+      <created>1543713854675</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1543713854676</updated>
+    </task>
+    <task id="LOCAL-00007" summary="kotlin study #3-7">
+      <created>1543732768110</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543732768110</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28931000" />
+    <option name="totallyTimeSpent" value="35064000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="564" height="687" extended-state="0" />
+    <frame x="-7" y="8" width="540" height="679" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.81854045" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.8174603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -453,7 +464,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.9821747" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.31588447" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32051283" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -465,7 +476,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.3267148" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32417583" />
       <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -474,7 +485,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="right" id="Maven" order="6" weight="0.32955465" />
-      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32916668" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
@@ -486,7 +497,10 @@
     <MESSAGE value="kotlin study #3-2" />
     <MESSAGE value="kotlin study #3-3" />
     <MESSAGE value="kotlin study #3-4" />
-    <option name="LAST_COMMIT_MESSAGE" value="kotlin study #3-4" />
+    <MESSAGE value="kotlin study #3-5" />
+    <MESSAGE value="kotlin study #3-6" />
+    <MESSAGE value="kotlin study #3-7" />
+    <option name="LAST_COMMIT_MESSAGE" value="kotlin study #3-7" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kotlinstudy.iml">
@@ -496,10 +510,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/day2_testdev.kt">
+    <entry file="file://$PROJECT_DIR$/src/day2_testdev.kt" />
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/util/Tuples.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="203">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Application.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="427" column="28" lean-forward="true" selection-start-line="427" selection-start-column="28" selection-end-line="427" selection-end-column="28" />
+          <folding>
+            <element signature="e#14#99#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -517,23 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/util/Tuples.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Application.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="335" lean-forward="true" selection-start-line="335" selection-end-line="335" />
-          <folding>
-            <element signature="e#14#99#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
